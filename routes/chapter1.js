@@ -4,7 +4,8 @@ var router = express.Router();
 // Get chap1 page
 router.get('/', function(req, res, next) {
 	res.render('1/chapter1', {
-		chapters : 'active'
+		chapters : 'active',
+        c0 : 'active'
 	});
 });
 router.get('/1', function(req, res, next) {
