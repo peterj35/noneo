@@ -13,6 +13,14 @@
 <body>
 	<% include common/nav.ejs %>
     <!-- Begin page content -->
+    <div class="container pagers">
+      <nav>
+        <ul class="pager">
+          <li class="previous"><a href="/"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Home</a></li>
+          <li class="next"><a href="/confucius">Confucius <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="container">
       <div class="page-header">
         <h1>Purpose</h1>
@@ -28,7 +36,7 @@
             Just as modern English translations of the Bible are published periodically to help modern day Christians incorporate Christian ethics into their lifestyles, I believe that a modern interpretation<a href="#c-3" class="citation" title="By 'modern interpretation', I mean a truly modern one where the main purpose is to help make understood the philosophies presented in the Analects to the average reader in the context of present-day values and ideas, and not as a study of history. Therefore, the commentary that's presented is not to be taken as the most-accepted interpretation, or even the most popular. In essence, I am not analyzing the passages through a well-conducted academic research, but rather synthesizing the ancient text through my own experiences and philosophies."><span id="rfn-3"></span>[3]</a> of the ancient Analects of Confucius will help our society understand the timeless philosophies and truths that ancient scholars have studied and encouraged.
           </p>
           <p>
-            A common impression of the Confucian philosophies in the Western world is of 'mystic sayings' that don't have much application or relevance in the modern world. However, just as Plato's Allegory of the Cave<a href="#c-4" class="citation" title="Or my preferred form, the Allegory of the Divided Line"><span id="rfn-4"></span>[4]</a> has applications on society today<a href="#c-5" class="citation" title="Consider the differences between people who only follow the most popular (state-sponsored) news outlets and take their reporting to be the absolute facts, versus people who recognize the potential biases and unspoken motivations of every news outlet and attempt to conduct their own research into truth."><span id="rfn-5"></span>[5]</a>, many of Confucian values are still not only presented as metaphors but are notably present in the minds of many modern Eastern Asians. These philosophies explain the observable hierarchies that exist in Japanese and Korean societies<a href="#c-6" class="citation" title="And also why ancient China, Japan, and Korea historically have had significantly less conflicts than European countries despite obvious imbalances in power."><span id="rfn-6"></span>[6]</a>, and why unemployment in Korea is at an all time high due to a large surplus of University degrees<a href="#c-7" class="citation" title="Confucian teachings encourage personal skill (meritocracy) and 'nobility' by virtue - not for personal gain, but because he identified that you could serve as a role-model for great personal ethics to a wider range of people if you yourself was obviously respected and distinguished in society."><span id="rfn-7"></span>[7]</a>. While these examples may serve to convince the reader of the negative effects of Confucian values, these values are simply an outcome of the oversimplification and misunderstanding of the true Confucian values - which is why I also believe it to be an important task to reiterate the outdated interpretations to be relevant for the complex, modern society. Many Asians identify as Confucians and still practise ancient rituals to their ancestors.
+            A common impression of the Confucian philosophies in the Western world is of 'mystic sayings' that don't have much application or relevance in the modern world. However, just as Plato's Allegory of the Cave<a href="#c-4" class="citation" title="Or my preferred form, the Allegory of the Divided Line"><span id="rfn-4"></span>[4]</a> has applications on society today<a href="#c-5" class="citation" title="Consider the differences between people who only follow the most popular (state-sponsored) news outlets and take their reporting to be the absolute facts, versus people who recognize the potential biases and unspoken motivations of every news outlet and attempt to conduct their own research into truth."><span id="rfn-5"></span>[5]</a>, many of Confucian values are still not only presented as metaphors but are notably present in the minds of many modern Eastern Asians. These philosophies explain the observable hierarchies that exist in Japanese and Korean societies<a href="#c-6" class="citation" title="And also why ancient China, Japan, and Korea historically have had significantly less conflicts than European countries despite obvious imbalances in power."><span id="rfn-6"></span>[6]</a>, and why unemployment in Korea is at an all time high due to an over abundance of University degrees<a href="#c-7" class="citation" title="Confucian teachings encourage personal skill (meritocracy) and 'nobility' by virtue - not for personal gain, but because he identified that you could serve as a role-model for great personal ethics to a wider range of people if you yourself was obviously respected and distinguished in society."><span id="rfn-7"></span>[7]</a>. While these examples may serve to convince the reader of the negative effects of Confucian values, these values are simply an outcome of the oversimplification and misunderstanding of the true Confucian values - which is why I also believe it to be an important task to reiterate the outdated interpretations to be relevant for the complex, modern society. Many Asians identify as Confucians and still practise ancient rituals to their ancestors.
           </p>
           <p>
             In reality, the Confucian values have tremendous positive effects on society if interpreted correctly into an individual's value system, and shares many similarities with Buddhism. Nonetheless, Confucius even during his lifetime acknowledged that the path to virtuous living is difficult, and it is seldom that you meet those living by worldly ethics instead of personal greed.
@@ -78,7 +86,7 @@
         </ul>
         <ul class="pager">
           <li class="previous"><a href="/"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Home</a></li>
-          <li class="next"><a href="/introduction">Introduction <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>
+          <li class="next"><a href="/confucius">Confucius <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>
         </ul>
       </nav>
     </div>
@@ -129,7 +137,7 @@
 
     <% include common/footer.ejs %>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <% include common/footerincludes.ejs %>
+
 </body>
 </html>

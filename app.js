@@ -17,10 +17,12 @@ app.use(express.static(__dirname + '/public'));
 ----------------------------------------*/
 var index = require('./routes/index');
 var purpose = require('./routes/purpose');
+var confucius = require('./routes/confucius');
 var introduction = require('./routes/introduction');
 var chapter1 = require('./routes/chapter1');
 app.use('/', index);
 app.use('/purpose', purpose);
+app.use('/confucius', confucius);
 app.use('/introduction', introduction);
 app.use('/1', chapter1);
 

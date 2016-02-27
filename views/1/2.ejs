@@ -12,6 +12,14 @@
 <body>
   <% include ../common/nav.ejs %>
     <!-- Begin page content -->
+    <div class="container pagers">
+      <nav>
+        <ul class="pager">
+          <li class="previous"><a href="/1/1"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> 1.1 Learning is Pleasurable</a></li>
+          <li class="next"><a href="/1/3">1.3 Embellishment is Rarely Veracious <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="container">
       <div class="page-header">
         <h1>1.2 Virtues are based on Foundations</h1>
@@ -65,7 +73,7 @@
             Notably, as you can tell from the Eno translation, it is not Confucius who shares this quote, but instead a disciple by the name of You Ruo. Some passages in the Analects are not attributed to Confucius, but rather his disciples. This is a reason why many academics deduce that the Analects was written over a long period of time by different descendents of disciples.
           </p>
           <p>
-            You Ruo was 43 years younger than Confucius, and is said to have looked and sounded similar to Confucius. This led some disciples to want to nominate You Ruo as the primary successor to the Confucian school of thought, but many of the other disciples disagreed and the idea was abandoned. Following Confucius' death, many of the disciples went on to form separate ideologies that focused on different aspects of Confucius' teachings, of which eventually may of these different schools of thought were reunited under the name 'Confucianism'.
+            You Ruo was 13 years younger than Confucius, and is said to have looked and sounded similar to Confucius. This led some disciples to want to nominate You Ruo as the primary successor to the Confucian school of thought, but many of the other disciples disagreed and the idea was abandoned. Following Confucius' death, many of the disciples went on to form separate ideologies that focused on different aspects of Confucius' teachings, of which eventually may of these different schools of thought were reunited under the name 'Confucianism'.
           </p>
           <p>
             The concept of the '<a href="https://en.wikipedia.org/wiki/Junzi"><span class="glyphicon glyphicon-link"></span> Junzi</a>' (Ideal Person) is a frequently discussed term in the Analects, with some similarities to Socrates' 'Philosopher King', as the ultimate human who can embody the virtues of ethics and justice in their purest forms. In order to become 'Junzi', one must have '<a href="https://en.wikipedia.org/wiki/Ren_(Confucianism)"><span class="glyphicon glyphicon-link"></span> Ren</a>' (a comprehensive ethical virtue). All that the Analects tries to accomplish is to describe the lifestyle of a person who lives by virtues and not of greed (Junzi), and to explain the concept of those virtues (Ren). The earliest insight of what this illusive concept of 'Ren' may be is explained in this passage. You Ruo described <a href="https://en.wikipedia.org/wiki/Filial_piety"><span class="glyphicon glyphicon-link"></span> filial piety</a> and sibling-like love for one's friends as the fundamental blocks for living virtuously (with Ren!).
@@ -96,7 +104,7 @@
 
     <% include ../common/footer.ejs %>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <% include ../common/footerincludes.ejs %>
+  
 </body>
 </html>

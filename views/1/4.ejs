@@ -12,6 +12,14 @@
 <body>
   <% include ../common/nav.ejs %>
     <!-- Begin page content -->
+    <div class="container pagers">
+      <nav>
+        <ul class="pager">
+          <li class="previous"><a href="/1/3"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> 1.3 Embellishment is Rarely Veracious</a></li>
+          <li class="next"><a href="/1/5">1.5 The Make of a Ruler <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="container">
       <div class="page-header">
         <h1>1.4 Three Self Reflections</h1>
@@ -56,7 +64,7 @@
             Despite his shortcomings, Zengzi eventually became Confucius' unofficial successor largely due to his young age (and the early death of Confucius' most prized disciple, Yan Hui). He also tried to overcome his lack of intuition with pure memorization of his master's teachings, and was able to transfer lots of knowledge to his disciples, which included the famous Mencius. His disciples became the most-versed in Confucian teachings than their competitors, and secured power in the circle. 
           </p>
           <p>
-            Nonetheless, Zengzi has been evaluated especially by modern scholars as a negative influence to Confucianism, and is frequently blamed for many of the adverse effects of Confucianism we can observe today, including the over-rigid social hierarchy system. He is said to have oversimplified the intricate Confucian ethics, a frequently cited example being that he morphed the philosophy of "Parents must be parentlike, masters masterful, elders elderly, superiors morally superior <strong>in order to be respected</strong>," into a meager "Parents must be respected because they are parents, masters must be respected because they are masters, elders must be respected because they are elders, and superiors must be respected because they are superior."
+            Nonetheless, Zengzi has been evaluated especially by modern scholars as a negative influence to Confucianism, and is frequently blamed for many of the adverse effects of Confucianism we can observe today, including the over-rigid social hierarchy system. He is said to have oversimplified the intricate Confucian ethics, a frequently cited example being that he reduced the nuanced philosophy of "Parents must be parentlike, masters masterful, elders elderly, superiors morally superior <strong>in order to be respected</strong>," into a meager "Parents must be respected because they are parents, masters must be respected because they are masters, elders must be respected because they are elders, and superiors must be respected because they are superior."
           </p>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6">
@@ -81,7 +89,6 @@
 
     <% include ../common/footer.ejs %>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <% include ../common/footerincludes.ejs %>
 </body>
 </html>
