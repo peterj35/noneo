@@ -15,11 +15,13 @@ app.use(express.static(__dirname + '/public'));
 
 /* Set up the routes
 ----------------------------------------*/
+var verifyzoho = require('./routes/verify');
 var index = require('./routes/index');
 var purpose = require('./routes/purpose');
 var confucius = require('./routes/confucius');
 var introduction = require('./routes/introduction');
 var chapter1 = require('./routes/chapter1');
+app.use('/verify', verifyzoho);
 app.use('/', index);
 app.use('/purpose', purpose);
 app.use('/confucius', confucius);
