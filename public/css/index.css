@@ -18,6 +18,120 @@ a:hover {
 	vertical-align: super;
 }
 
+/* Navbar */
+.brand,
+.sub-bar {
+    display: none;
+}
+.navbar-brand {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.navbar-nav {
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.brand-before,
+.brand-name {
+    /*text-transform: capitalize;*/
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 10px 0 0px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        /*font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+        font-size: 3.25em;
+        font-weight: 700;
+        line-height: normal;
+        color: #323232;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .sub-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 30px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-size: 0.80em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #323232;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #f0ead6;
+        color: #323232;
+    }
+
+    .nav>li>a {
+        padding: 5px 40px 5px;
+    }
+    .navbar-nav>li>a {
+        line-height: normal;
+        color: #666666 !important;
+    }
+    .navbar-nav>.active>a {
+        line-height: normal;
+        background-color: #f0ddd6 !important;
+    }
+    .navbar-nav>li>a:hover {
+        line-height: normal;
+        color: #000 !important;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.10em;
+    }
+}
+
+
+/* /navbar */
+
+
 .dropdown-menu {
 	min-width: 200px;
 }
@@ -28,7 +142,7 @@ a:hover {
 	min-width: 600px;
 }
 .dropdown-menu li a {
-	padding: 5px 15px;
+	padding: 10px 0px 0px;
 	/*font-weight: 300;*/
 }
 .multi-column-dropdown {
@@ -90,6 +204,3 @@ h3 {
 	margin-bottom: 25px;
 }
 
-.navbar {
-	background-color: #fff;
-}
