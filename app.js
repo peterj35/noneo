@@ -25,6 +25,7 @@ app.use('/purpose', purpose);
 app.use('/confucius', confucius);
 app.use('/introduction', introduction);
 app.use('/1', chapter1);
+app.use(express.static('zoho'));
 
 // Start the server
 app.listen(appEnv.port, '0.0.0.0', function() {
