@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+	<title>Blog</title>
+  <% include common/includes.ejs %>
+</head>
+<body>
+	<% include common/nav.ejs %>
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Blog</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <h3>Subscribe!</h3>
+          <p>
+            The Noneo is a project that will constantly be updated! There will be a blog published soon, to discuss the philosophies of Confucius in a context outside of the passages of the Analects.
+          </p>
+          <p>
+            <a href="/subscribe">Subscribe now!</a>
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+        </div>
+      </div>
+    </div>
+    <div class="container pagers">
+      <nav>
+        <ul class="pager">
+          <li><a href="" onclick="window.scroll(0,1);"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><br>Blog</a></li>
+        </ul>
+<!--         <ul class="pager">
+          <li class="previous"><a href="/purpose"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Purpose</a></li>
+          <li class="next"><a href="/introduction">Introduction <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>
+        </ul> -->
+      </nav>
+    </div>
+    <hr>
+
+    <% include common/footer.ejs %>
+
+  <% include common/footerincludes.ejs %>
+
+</body>
+</html>

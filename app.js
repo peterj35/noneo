@@ -20,11 +20,15 @@ var purpose = require('./routes/purpose');
 var confucius = require('./routes/confucius');
 var introduction = require('./routes/introduction');
 var chapter1 = require('./routes/chapter1');
+var blog = require('./routes/blog');
+var subscribe = require('./routes/subscribe');
 app.use('/', index);
 app.use('/purpose', purpose);
 app.use('/confucius', confucius);
 app.use('/introduction', introduction);
 app.use('/1', chapter1);
+app.use('/blog', blog);
+app.use('/subscribe', subscribe);
 
 // Start the server
 app.listen(appEnv.port, '0.0.0.0', function() {
