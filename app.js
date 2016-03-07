@@ -30,6 +30,35 @@ app.use('/1', chapter1);
 app.use('/blog', blog);
 app.use('/subscribe', subscribe);
 
+/* 404 Page
+-------------------------------------------------------- */
+app.use(function(req, res, next) {
+	res.status(404);
+
+	// respond with html page
+	if (req.accepts('html')) {
+		res.render('subscribe', {
+			subscribe : 'active',
+			title : "Page Not Available",
+			message : "The page, chapter, or passage you are looking for doesn't exist... yet! <br><br> To be notified when it does become available, you should subscribe!",
+		});
+
+		return;
+	}
+
+	// respond with json
+	if (req.accepts('json')) {
+		res.send({
+			error: 'Not found'
+		});
+
+		return;
+	}
+
+	// default to plain-text. send()
+	res.type('txt').send('Not found');
+});
+
 // Start the server
 app.listen(appEnv.port, '0.0.0.0', function() {
 	console.log("server starting on " + appEnv.url);
