@@ -208,3 +208,7 @@ h3 {
 	padding: 10px 0 0px;
 }
 
+.list-group a:hover {
+    background-color: #E5E5E5;
+    color: #333333;
+}
