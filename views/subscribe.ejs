@@ -14,11 +14,9 @@
 	<% include common/nav.ejs %>
     <!-- Begin page content -->
     <div class="container">
-      <div class="page-header"><h2><%= title %></h2></div>
+      <%- title %>
       <div class="page-content">
-        <div class="well">
-          <%- message %>
-        </div>
+        <%- message %>
       </div>
     </div>
     <div class="container">

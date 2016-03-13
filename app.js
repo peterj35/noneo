@@ -39,8 +39,8 @@ app.use(function(req, res, next) {
 	if (req.accepts('html')) {
 		res.render('subscribe', {
 			subscribe : 'active',
-			title : "Page Not Available",
-			message : "The page, chapter, or passage you are looking for doesn't exist... yet! <br><br> To be notified when it does become available, you should subscribe!",
+			title : "<div class='page-header'><h2>Page Not Available</h2></div>",
+			message : "<div class='well'>The page, chapter, or passage you are looking for doesn't exist... yet! <br><br> To be notified when it does become available, you should subscribe!</div>",
 		});
 
 		return;

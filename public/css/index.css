@@ -212,3 +212,11 @@ h3 {
     background-color: #E5E5E5;
     color: #333333;
 }
+
+.panel {
+    background-color: #f3eede;
+}
+
+.panel p {
+    font-size: 13px;
+}
