@@ -60,6 +60,6 @@ app.use(function(req, res, next) {
 });
 
 // Start the server
-app.listen(appEnv.port, '0.0.0.0', function() {
-	console.log("server starting on " + appEnv.url);
+app.listen(6002, '0.0.0.0', function() {
+	console.log("server starting on 6002");
 });
